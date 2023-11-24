@@ -1,0 +1,2 @@
+# INR-deblurring
+Code implementation for my B.Sc thesis "IMPLICIT NEURAL REPRESENTATIONS FOR NON-BLIND DEPTH-AWARE IMAGE DEBLURRING"
