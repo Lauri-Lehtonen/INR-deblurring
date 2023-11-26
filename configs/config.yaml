@@ -1,0 +1,50 @@
+---
+DATASETS:
+  - NAME: VirtualCMB
+    ROOT: ./VirtualCMB
+    INFO_CSV: ./data/VirtualCMB_info.csv
+    PATCH_SIZE:
+      blur: !!python/tuple [240, 320]
+      deblur: !!python/tuple [72, 128]
+
+  - NAME: RealCMB
+    ROOT: ./RealCMB
+    INFO_CSV: ./data/RealCMB_info.csv
+    PATCH_SIZE:
+      blur: null
+      deblur: !!python/tuple [128, 96]
+
+RESULTS_DIR: ./results
+DEVICE: cuda:0
+
+DEBLUR:
+  SIREN:
+    hidden_features: 192
+    hidden_layers: 4
+    fourier_scale: null
+  FOURIER_MAPPED_MLP:
+    hidden_features: 448
+    hidden_layers: 4
+    fourier_scale: 5
+  HASH_ENCODING:
+    hidden_features: 128
+    hidden_layers: 2
+    fourier_scale: null
+  DICTIONARY_FIELD:
+    hidden_features: 64
+    hidden_layers: 3
+    fourier_scale: null
+  nn_model: SIREN
+  num_epochs: 400
+  lr: 0.0005
+  scheduler_eta_min: 0.000005
+  clip_grad: true
+  gradient_fn: u-net
+  gradient_weight: 0.000008
+  p_norm: 1
+
+PARALLAX_ICB_MODEL:
+  blur_diff: 1
+  sigma: 4.0
+
+...
