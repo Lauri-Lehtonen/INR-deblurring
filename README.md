@@ -5,8 +5,6 @@ Built on ParallaxICB by Torres and Kämäräinen, which can be found at https://
 
 
 1. Installation
-
-    This repository is built in PyTorch 1.13.0 and tested on Ubuntu 20.04 environment (Python3.8, CUDA11.6). Follow these instructions:
     
     Clone repository
     
@@ -15,7 +13,7 @@ Built on ParallaxICB by Torres and Kämäräinen, which can be found at https://
     
     Create conda environment
     
-        conda create -y --name ParallaxICB python=3.8 && conda activate ParallaxICB
+        conda create -y --name INR-deblurring python=3.8 && conda activate INR-deblurring
     
     Install dependencies
     
@@ -27,8 +25,7 @@ Built on ParallaxICB by Torres and Kämäräinen, which can be found at https://
 
 3. Configuration file: ./configs/config.yaml
 
-    Change the root directories (VirtualCMB and RealCMB) to the paths where the datasets have been downloaded.
-    Adjust results directory to your own preference.
+    Change the root directories (VirtualCMB and RealCMB) to the paths where the datasets are.
 
 4. Info files
 
