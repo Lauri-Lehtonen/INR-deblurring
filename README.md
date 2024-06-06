@@ -52,7 +52,7 @@ Built on ParallaxICB by Torres and Kämäräinen, which can be found at https://
 
 6. Running of script.
 
-    Blur formation (forward task) and neural sharp representation (inverse task) experiments can be run with the command:
+    experiments can be run with the command:
     
         python main.py --dataset $DATASET --model $BLUR_MODEL --id $ID --nn_model $MODELNAME
     
