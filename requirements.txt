@@ -12,3 +12,6 @@ pandas==1.5.1
 torch 
 torchvision 
 torchaudio
+plyfile
+commentjson
+omegaconf
