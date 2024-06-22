@@ -17,23 +17,23 @@ Built on ParallaxICB by Torres and Kämäräinen, which can be found at https://
     
     Install dependencies
     
-        sh install.sh
+        pip install -r requirements.txt
 
-2. Datasets
+3. Datasets
 
     Download and unzip datasets from https://github.com/germanftv/ParallaxICB/tree/main
 
-3. Configuration file: ./configs/config.yaml
+4. Configuration file: ./configs/config.yaml
 
     Change the root directories (VirtualCMB and RealCMB) to the paths where the datasets are.
 
-4. Info files
+5. Info files
 
     Run the following instruction to generate dataset info files:
     
         python setup.py
     
-5. InstantNGP (refer to https://github.com/NVlabs/tiny-cuda-nn/tree/master if issues arise)
+6. InstantNGP (refer to https://github.com/NVlabs/tiny-cuda-nn/tree/master if issues arise)
    
     Download the InstantNGP repository and compile it
 
@@ -50,7 +50,7 @@ Built on ParallaxICB by Torres and Kämäräinen, which can be found at https://
         cd bindings/torch
         python setup.py install
 
-6. Running of script.
+7. Running of script.
 
     experiments can be run with the command:
     
